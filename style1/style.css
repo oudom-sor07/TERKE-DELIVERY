@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=YourFontName:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+        font-family: "Montserrat", sans-serif;
+        background-color: rgb(0, 0, 0);
+
+}
+:root{
+    --orange-color: #ff8c00
+}
+:root{
+    --gray-color: #313030
+}
+.nav-bar{
+    width: 100%;
+    height: 12vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    & h1{
+        color: var(--orange-color);
+        font-size: 33px;
+        font-family: "Roboto Condensed", sans-serif;
+
+    }
+
+    & ul{
+        display: flex;
+        & li,a{
+            list-style: none;
+            color: white;
+            font-size: 17px;
+            text-decoration: none;
+            width: 145px;
+            transition: 0.3s all;
+            text-align: center;
+            padding: 6px 10px;
+
+        }
+        & li:hover > a{
+            transition: 0.3s all;
+            text-align: center;
+            padding: 6px 20px;
+            border-radius: 30px;
+            background-color: var(--orange-color);
+        }
+    }
+}
+.main-content{
+    width: 93%;
+    height: 88vh;
+    
+    margin: auto;
+    & .block1{
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    & h1{
+        font-size: 100px;
+        width: 75%;
+        height: auto;
+        color: white;
+        & span{
+            color: var(--orange-color);
+        }
+    }
+    & .paragraph{
+        width: 25%;
+        height: auto;
+        padding: 20px;
+        & p{
+            font-size: 20px;
+            text-align: justify;
+            margin-top: 20px;
+            color: white;
+        }
+        & button{
+            padding: 15px 30px;
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+            background-color: var(--orange-color);
+            color: white;
+            font-weight: 700;
+            transition: 0.5s all;
+            margin-top: 20px;
+
+        }
+        & button:hover{
+            transition: 0.5s all;
+            transform: scale(1.1);
+            background-color: orangered;
+            box-shadow: ;
+        }
+    }
+}
+.main-content .block2{
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 50px;
+    & .item1{
+        width: 30%;
+        height: 450px;
+        background-color:  rgb(49, 48, 48);
+        border-radius: 30px;
+        padding: 10px 30px;
+        transition: 0.3s all;
+        & .item-contain1{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0px;
+            & p{
+                font-size: 25px;
+                color: white;
+            }
+            & .dark-mode{
+                width: auto;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                & .icon{
+                    width: 52px;
+                    height: 24px;
+                    border-radius: 20px;
+                    place-content: center;
+                    background-color: rgba(111, 109, 109, 0.485);
+                    & #icon{
+                        font-size: 22px;
+                        color: var(--orange-color);
+                    }
+                }
+            }
+        }
+    }
+    & .item2-contain2{
+        width: 100%;
+        height: 75%;
+        background-color: rgba(94, 91, 91, 0.747);
+        border-radius: 30px;
+        padding: 20px 20px;
+        & p{
+            font-size: 20px;
+            color: white;
+        }
+        & .form{
+            width: auto;
+            height: auto;
+            & input{
+                width: 100%;
+                height: 50px;
+                padding: 10px 20px;
+                border-radius: 20px;
+                outline: none;
+                border: none;
+                font-size: 16px;
+                background-color: rgba(128, 128, 128, 0.331);
+                color: white;
+                margin-top: 25px;
+            }
+            & input ::placeholder{
+                color: rgb(61, 59, 59)
+            }
+        }
+        & button{
+            width: 100%;
+            height: 50px;
+            margin-top: 25px;
+            border-radius: 20px;
+            border: none;
+            background-color: var(--orange-color);
+            color: white;
+            font-size: 17px;
+            font-weight: 700;
+            transition: 0.2s all;
+        }
+        & button:hover{
+            transition: 0.2s all;
+            background-color: orangered;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+    & .item1:hover{
+        transition: 0.3s all;
+        transform: scale(1.1);
+    }
+    & .item2{
+        width: 70%;
+        height: 450px;
+        transition: 0.3s all;
+        border-radius: 30px;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+    }
+
+}
+& .item2:hover{
+    transition: 0.3s all;
+    transform: scale(1.1);
+}
+.about{
+    width: 98%;
+    height: 120vh;
+    margin: auto;
+    background-color: var(--gray-color);
+    border-radius: 30px;
+    padding: 25px 30px;
+    & p{
+        font-size: 18px;
+        color: var(--orange-color);
+        padding-bottom: 25px;
+
+    }
+    & h1{
+        font-size: 85px;
+        color: white;
+        padding-bottom: 25px;
+    }
+
+}
+.about .box{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+}
+.about .box .item{
+    width: 432px;
+    height: 300px;
+    background-color: rgb(72, 72, 72);
+    border-radius: 30px;
+    padding: 20px 25px;
+    transition: 0.3s all;
+    & h1{
+        font-size: 50px;
+        padding-bottom: 18px;
+    }
+    & h2{
+        font-size: 30px;
+        padding-bottom: 18px;
+        color: white;
+    }
+    & p{
+        font-size: 18px;
+        color: rgb(197, 197, 197);
+    }
+}
+.about .box .item:hover{
+    transition: 0.3s all;
+    background-color: var(--orange-color);
+}
